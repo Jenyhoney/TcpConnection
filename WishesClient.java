@@ -29,5 +29,5 @@ System.out.println("Server says: "+str2);
 dout.close();  
 s.close();  
 }
-
 }
+
