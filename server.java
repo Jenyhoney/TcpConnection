@@ -1,16 +1,7 @@
-import java.net.*;            
-
-import java.io.InputStream;
-
-import java.io.DataInputStream;
-
- 
-
-public class WishesServer
-
-{
-
-   public static void main(String args[])throws Exception{  
+import java.net.*;  
+    import java.io.*;  
+    class server{  
+    public static void main(String args[])throws Exception{  
     ServerSocket ss=new ServerSocket(3333);  
     Socket s=ss.accept();  
     DataInputStream din=new DataInputStream(s.getInputStream());  
@@ -28,6 +19,4 @@ public class WishesServer
     din.close();  
     s.close();  
     ss.close();  
-    }
-
-}
+    }}  
