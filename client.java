@@ -1,17 +1,7 @@
-//program for Tcpconnectio client server program
-import java.net.*; 
-
-import java.io.OutputStream;
-
-import java.io.DataOutputStream;
-
- 
-
-public class WishesClient
-
-{
-
-   public static void main(String args[])throws Exception{  
+import java.net.*;  
+import java.io.*;  
+class client{  
+public static void main(String args[])throws Exception{  
 Socket s=new Socket("localhost",3333);  
 DataInputStream din=new DataInputStream(s.getInputStream());  
 DataOutputStream dout=new DataOutputStream(s.getOutputStream());  
@@ -29,5 +19,4 @@ System.out.println("Server says: "+str2);
 dout.close();  
 s.close();  
 }
-}
-
+}  
